@@ -8,6 +8,7 @@
 import SwiftUI
 //test new donothing commit with only this comment as a change.
 struct ContentView: View {
+    @State private var showSheet = false
     var body: some View {
         //enable NavigationLinks
         NavigationStack {
@@ -17,10 +18,20 @@ struct ContentView: View {
                     DetailView()
                 //label for the link
                 } label: {
-                    Text("Git learning app")
+                    Text("Git learning app:")
+                        .foregroundStyle(.black)
                 }
+                Button(action: {
+                    showSheet=true
+                }, label:{
+                    Text("Show sheet")
+                })
+              
             }
             .padding()
+            .sheet(isPresented: $showSheet, content: {
+                SheetView()
+            })
         }
     }
 }
