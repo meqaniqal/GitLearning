@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//test new donothing commit with only this comment as a change.
 struct ContentView: View {
     var body: some View {
         //enable NavigationLinks
