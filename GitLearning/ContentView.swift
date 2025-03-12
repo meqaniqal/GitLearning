@@ -18,13 +18,15 @@ struct ContentView: View {
                     DetailView()
                 //label for the link
                 } label: {
-                    Text("Git learning app:")
+                    Text("Git learning app")
                         .foregroundStyle(.black)
+                        .background(Color.yellow)
                 }
                 Button(action: {
                     showSheet=true
                 }, label:{
                     Text("Show sheet")
+                        .background(Color.yellow)
                 })
               
             }
