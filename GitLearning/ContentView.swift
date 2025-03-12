@@ -25,7 +25,7 @@ struct ContentView: View {
                 Button(action: {
                     showSheet=true
                 }, label:{
-                    Text("Show sheet")
+                    Text("Show more")
                         .background(Color.yellow)
                 })
               
