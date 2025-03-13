@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DetailView: View {
     var body: some View {
-        Text("This is an app where you will learn about Git")
+        Text("This is an app where you will learn about Git.")
+            .padding(.horizontal, 50)
             .foregroundStyle(Color.red)
             .font(.largeTitle)
             .frame(width: 300, height: 300)
@@ -19,6 +20,7 @@ struct DetailView: View {
             .cornerRadius(50)
             .frame(maxWidth: .infinity,maxHeight: .infinity)
             .background(Color.black.opacity(0.9))
+            
     }
 }
 
